@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_app"
+    tools:context=".Activity.Video.VideoListActivity">
+
+
+    <include layout="@layout/tollbar1" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_videolist"
+            android:layout_width="match_parent"
+            android:background="@color/bg_app"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_header"
+            android:clipToPadding="false"
+            android:layoutAnimation="@anim/item_anim"
+            android:paddingTop="@dimen/_20sdp"
+            android:paddingBottom="@dimen/_20sdp" />
+
+        <TextView
+            android:id="@+id/tv_nodata"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_header"
+            android:layout_alignParentStart="true"
+            android:fontFamily="@font/text_bold"
+            android:gravity="center"
+            android:text="No data"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_native_banner_ads" />
+
+
+</LinearLayout>

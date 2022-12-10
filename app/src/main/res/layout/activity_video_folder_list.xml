@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_app"
+    android:orientation="vertical"
+    tools:context=".Activity.Video.VideoFolderListActivity">
+
+
+    <include layout="@layout/tollbar1" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <com.ads.adsdemosp.AdsView.NativeAdsView
+                android:id="@+id/adid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_folderlist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/ll_header"
+                android:clipToPadding="false"
+                android:layoutAnimation="@anim/item_anim"
+                android:paddingBottom="@dimen/_20sdp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_nodata"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/ll_header"
+                android:layout_alignParentStart="true"
+                android:fontFamily="@font/text_semibold"
+                android:gravity="center"
+                android:text="No data"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmer_view_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            shimmer:duration="100">
+
+            <!-- Adding 7 rows of placeholders
+            shimmer:auto_start="true"
+            android:animateLayoutChanges="true"
+            android:animationCache="true"-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/shimmer_videofolder" />
+
+                <include layout="@layout/shimmer_videofolder" />
+
+                <include layout="@layout/shimmer_videofolder" />
+
+                <include layout="@layout/shimmer_videofolder" />
+
+                <include layout="@layout/shimmer_videofolder" />
+
+
+            </LinearLayout>
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:indeterminateTint="@color/colorPrimary"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <include layout="@layout/layout_native_banner_ads" />
+</LinearLayout>

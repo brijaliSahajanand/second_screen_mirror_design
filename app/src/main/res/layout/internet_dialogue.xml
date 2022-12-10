@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_app"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:gravity="center|start"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Internet"
+
+                    android:fontFamily="@font/text_semibold"
+                    android:textColor="@color/black"
+                    android:textSize="21dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Connection"
+
+                    android:fontFamily="@font/text_semibold"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Please Check Your internet Connection \nand try again"
+                    android:paddingTop="25dp"
+                    android:paddingBottom="25dp"
+                    android:fontFamily="@font/text_medium"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:id="@+id/ln_try_again"
+                    android:background="@drawable/bg_button">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Try Again"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        android:fontFamily="@font/text_semibold"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+
+                <!--<ImageView
+                    android:id="@+id/iv_try_again"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:paddingTop="20dp"
+                    android:background="@drawable/try_again_button"/>-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

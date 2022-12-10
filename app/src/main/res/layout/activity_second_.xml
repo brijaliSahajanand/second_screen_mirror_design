@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8sdp">
+
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/text_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp" />
+
+        <com.ads.adsdemosp.AdsView.quiz_Header_AdsView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bg_2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/demo"
+                android:includeFontPadding="false"
+                android:text="Screen Cast"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_19ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/text_reguller"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="Mirror Screen from phone to TV &amp; Mirror \n screen from PC to TV"
+                android:textColor="@color/sec_text_color"
+                android:textSize="@dimen/_11ssp" />
+
+
+            <com.ads.adsdemosp.AdsView.NativeAdsView
+                android:id="@+id/adid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp" />
+
+
+            <TextView
+                android:id="@+id/iv_nxt_button"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/bg_button_round"
+                android:fontFamily="@font/text_medium"
+                android:includeFontPadding="true"
+                android:paddingHorizontal="@dimen/_110sdp"
+                android:paddingVertical="@dimen/_12sdp"
+                android:text="Start"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_17ssp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <com.ads.adsdemosp.AdsView.BannerAdsView
+        android:id="@+id/bottomview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

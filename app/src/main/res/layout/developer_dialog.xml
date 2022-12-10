@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_margin="@dimen/_20sdp"
+    android:background="@drawable/bg_white_ads"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/warning_icon" />
+
+        <TextView
+            android:id="@+id/tv_maintenance_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:fontFamily="@font/text_medium"
+            android:gravity="center"
+            android:text="@string/txtwarn"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btn_recheck"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button"
+            android:backgroundTint="#cc3300"
+            android:text="RECHECK"
+            android:fontFamily="@font/text_medium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp"
+            android:visibility="visible" />
+
+
+        <Button
+            android:id="@+id/btn_turnoff"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button"
+            android:backgroundTint="#339900"
+            android:fontFamily="@font/text_medium"
+            android:text="TURN OFF"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

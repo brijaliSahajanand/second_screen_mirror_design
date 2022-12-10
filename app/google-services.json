@@ -1,0 +1,491 @@
+{
+  "project_info": {
+    "project_number": "1086167484227",
+    "project_id": "screen-mirror-pro-65bd4",
+    "storage_bucket": "screen-mirror-pro-65bd4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086167484227:android:80204689da9550a26251f6",
+        "android_client_info": {
+          "package_name": "com.casting.wirelessdisplay.data"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1086167484227-0rht6rhvudo05ocmn0mkmd20qec0nf5u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.casting.wirelessdisplay.data",
+            "certificate_hash": "e8967beca794be349e1b5d35987a33bf4dc4adc5"
+          }
+        },
+        {
+          "client_id": "1086167484227-intrpom4lirids0sjikt94qbf5capnj6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPvmaVtNVF_VwyGCCswyzZTGhEg-VOg4c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1086167484227-intrpom4lirids0sjikt94qbf5capnj6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086167484227:android:0a3057ea4ac3ad396251f6",
+        "android_client_info": {
+          "package_name": "com.remote.casting.data"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1086167484227-kib860a6bg6gvb0jqgaj2ra9ip43m3tm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.remote.casting.data",
+            "certificate_hash": "e8967beca794be349e1b5d35987a33bf4dc4adc5"
+          }
+        },
+        {
+          "client_id": "1086167484227-intrpom4lirids0sjikt94qbf5capnj6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPvmaVtNVF_VwyGCCswyzZTGhEg-VOg4c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1086167484227-intrpom4lirids0sjikt94qbf5capnj6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086167484227:android:52e5e01b29c679346251f6",
+        "android_client_info": {
+          "package_name": "com.remote.control.mirroringdata"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1086167484227-o2g1qf5ocu7e23jb17c5urv1lgsb3i19.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.remote.control.mirroringdata",
+            "certificate_hash": "e8967beca794be349e1b5d35987a33bf4dc4adc5"
+          }
+        },
+        {
+          "client_id": "1086167484227-intrpom4lirids0sjikt94qbf5capnj6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPvmaVtNVF_VwyGCCswyzZTGhEg-VOg4c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1086167484227-intrpom4lirids0sjikt94qbf5capnj6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086167484227:android:51ecba2106f045576251f6",
+        "android_client_info": {
+          "package_name": "com.remote.mirrorcasting.wirelessdisplay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1086167484227-d5324i8t80ogf93glk3vnbk7jq0ifb6k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.remote.mirrorcasting.wirelessdisplay",
+            "certificate_hash": "e8967beca794be349e1b5d35987a33bf4dc4adc5"
+          }
+        },
+        {
+          "client_id": "1086167484227-intrpom4lirids0sjikt94qbf5capnj6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPvmaVtNVF_VwyGCCswyzZTGhEg-VOg4c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1086167484227-intrpom4lirids0sjikt94qbf5capnj6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086167484227:android:3cbe9f60e80910076251f6",
+        "android_client_info": {
+          "package_name": "com.screen.data.monitoring"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1086167484227-94v2o2hv89tsf8o6amijsp3q5cpetrdv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.screen.data.monitoring",
+            "certificate_hash": "e8967beca794be349e1b5d35987a33bf4dc4adc5"
+          }
+        },
+        {
+          "client_id": "1086167484227-intrpom4lirids0sjikt94qbf5capnj6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPvmaVtNVF_VwyGCCswyzZTGhEg-VOg4c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1086167484227-intrpom4lirids0sjikt94qbf5capnj6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086167484227:android:d0da6a55489da8ca6251f6",
+        "android_client_info": {
+          "package_name": "com.screen.mirroring.hdscreenview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1086167484227-0kqg4me8adkihdpjm85m4sr35pri6fjc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.screen.mirroring.hdscreenview",
+            "certificate_hash": "e8967beca794be349e1b5d35987a33bf4dc4adc5"
+          }
+        },
+        {
+          "client_id": "1086167484227-intrpom4lirids0sjikt94qbf5capnj6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPvmaVtNVF_VwyGCCswyzZTGhEg-VOg4c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1086167484227-intrpom4lirids0sjikt94qbf5capnj6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086167484227:android:3d3126e43fc9a2566251f6",
+        "android_client_info": {
+          "package_name": "com.screenmirror.monitor.display"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1086167484227-tgom5ikfu6dq4lmb69o772du94pt4pe6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.screenmirror.monitor.display",
+            "certificate_hash": "e8967beca794be349e1b5d35987a33bf4dc4adc5"
+          }
+        },
+        {
+          "client_id": "1086167484227-intrpom4lirids0sjikt94qbf5capnj6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPvmaVtNVF_VwyGCCswyzZTGhEg-VOg4c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1086167484227-intrpom4lirids0sjikt94qbf5capnj6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086167484227:android:75d52cd7ed0bb13f6251f6",
+        "android_client_info": {
+          "package_name": "com.screenmirror.wirelesscasting.tv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1086167484227-ms7gdsitvl4ilovdqab6dflc2j3fj2db.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.screenmirror.wirelesscasting.tv",
+            "certificate_hash": "e8967beca794be349e1b5d35987a33bf4dc4adc5"
+          }
+        },
+        {
+          "client_id": "1086167484227-intrpom4lirids0sjikt94qbf5capnj6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPvmaVtNVF_VwyGCCswyzZTGhEg-VOg4c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1086167484227-intrpom4lirids0sjikt94qbf5capnj6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086167484227:android:703351dd1581e2b76251f6",
+        "android_client_info": {
+          "package_name": "com.screenmirroring.wirelesscasting.tv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1086167484227-i7sutm4il4h6jvtd62b2222sl0udanv1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.screenmirroring.wirelesscasting.tv",
+            "certificate_hash": "e8967beca794be349e1b5d35987a33bf4dc4adc5"
+          }
+        },
+        {
+          "client_id": "1086167484227-intrpom4lirids0sjikt94qbf5capnj6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPvmaVtNVF_VwyGCCswyzZTGhEg-VOg4c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1086167484227-intrpom4lirids0sjikt94qbf5capnj6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086167484227:android:2d06e3edd5a624a56251f6",
+        "android_client_info": {
+          "package_name": "com.screenonwall.casttotv.mirroring"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1086167484227-3v8941aq0piph0nj49lcokrbgdv5ljov.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.screenonwall.casttotv.mirroring",
+            "certificate_hash": "e8967beca794be349e1b5d35987a33bf4dc4adc5"
+          }
+        },
+        {
+          "client_id": "1086167484227-intrpom4lirids0sjikt94qbf5capnj6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPvmaVtNVF_VwyGCCswyzZTGhEg-VOg4c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1086167484227-intrpom4lirids0sjikt94qbf5capnj6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086167484227:android:6b50662dfea056136251f6",
+        "android_client_info": {
+          "package_name": "com.screenshare.tvcast.smartcast"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1086167484227-qmin0j2mtjnjechc425hs9i248dq7e1q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.screenshare.tvcast.smartcast",
+            "certificate_hash": "e8967beca794be349e1b5d35987a33bf4dc4adc5"
+          }
+        },
+        {
+          "client_id": "1086167484227-intrpom4lirids0sjikt94qbf5capnj6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPvmaVtNVF_VwyGCCswyzZTGhEg-VOg4c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1086167484227-intrpom4lirids0sjikt94qbf5capnj6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086167484227:android:bab4c3602cf1c09f6251f6",
+        "android_client_info": {
+          "package_name": "com.scrrencast.monitor.data"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1086167484227-i9c9km6c2s88fpv568vj0vgi566rfmpp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.scrrencast.monitor.data",
+            "certificate_hash": "e8967beca794be349e1b5d35987a33bf4dc4adc5"
+          }
+        },
+        {
+          "client_id": "1086167484227-intrpom4lirids0sjikt94qbf5capnj6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPvmaVtNVF_VwyGCCswyzZTGhEg-VOg4c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1086167484227-intrpom4lirids0sjikt94qbf5capnj6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086167484227:android:6a40c2075e699cd76251f6",
+        "android_client_info": {
+          "package_name": "com.wirelesscasting.mobiletotv.data"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1086167484227-c3q5gu3lp4m556t18lqa8r4q5rl6duqh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wirelesscasting.mobiletotv.data",
+            "certificate_hash": "e8967beca794be349e1b5d35987a33bf4dc4adc5"
+          }
+        },
+        {
+          "client_id": "1086167484227-intrpom4lirids0sjikt94qbf5capnj6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPvmaVtNVF_VwyGCCswyzZTGhEg-VOg4c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1086167484227-intrpom4lirids0sjikt94qbf5capnj6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
