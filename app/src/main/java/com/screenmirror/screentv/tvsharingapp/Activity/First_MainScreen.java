@@ -2,14 +2,15 @@ package com.screenmirror.screentv.tvsharingapp.Activity;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
-import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.VideoView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.ads.adsdemosp.AdsClass.Ads_Interstitial;
+import com.airbnb.lottie.LottieAnimationView;
 import com.screenmirror.screentv.tvsharingapp.Activity.CastToTv.Setting_Permission_Write;
 import com.screenmirror.screentv.tvsharingapp.Activity.Help.HelpScreen;
 import com.screenmirror.screentv.tvsharingapp.Activity.TvBrand.TvBrandScreen;
@@ -20,7 +21,10 @@ import com.screenmirror.screentv.tvsharingapp.R;
 
 
 public class First_MainScreen extends BaseActivity {
-    ImageView iv_screen_mirror, iv_connect_guide, iv_casttotv, iv_vpn ,ln_privacy_app ,ln_share_app,ln_rate_us;
+    ImageView iv_screen_mirror, iv_connect_guide, iv_casttotv, iv_vpn, ln_privacy_app, ln_share_app, ln_rate_us;
+    LottieAnimationView lottieiew;
+    RelativeLayout rrscrollview;
+    LinearLayout llmiddleview, mainview, ll_animation;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -35,7 +39,11 @@ public class First_MainScreen extends BaseActivity {
 
 
     private void Declaration() {
-
+        mainview = findViewById(R.id.mainview);
+        ll_animation = findViewById(R.id.ll_animation);
+        llmiddleview = findViewById(R.id.llmiddleview);
+        rrscrollview = findViewById(R.id.rrscrollview);
+        lottieiew = findViewById(R.id.lottieiew);
         ln_rate_us = findViewById(R.id.ln_rate_us);
         ln_share_app = findViewById(R.id.ln_share_app);
         ln_privacy_app = findViewById(R.id.ln_privacy_app);
@@ -46,10 +54,46 @@ public class First_MainScreen extends BaseActivity {
 
         if (Preference.getVPN_Show() && Preference.getVn_header_show()) {
             iv_vpn.setVisibility(View.VISIBLE);
+
         } else {
             iv_vpn.setVisibility(View.GONE);
+
         }
 
+        if (Preference.getTouch()) {
+            lottieiew.setVisibility(View.GONE);
+            mainview.setVisibility(View.GONE);
+            ll_animation.setVisibility(View.GONE);
+        } else {
+            lottieiew.setVisibility(View.VISIBLE);
+            mainview.setVisibility(View.VISIBLE);
+            ll_animation.setVisibility(View.VISIBLE);
+        }
+
+        mainview.setOnClickListener(v -> {
+            lottieiew.setVisibility(View.GONE);
+            mainview.setVisibility(View.GONE);
+            ll_animation.setVisibility(View.GONE);
+            Preference.setTouch(true);
+        });
+        llmiddleview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mainview.setVisibility(View.GONE);
+                lottieiew.setVisibility(View.GONE);
+                ll_animation.setVisibility(View.GONE);
+                Preference.setTouch(true);
+            }
+        });
+        rrscrollview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mainview.setVisibility(View.GONE);
+                lottieiew.setVisibility(View.GONE);
+                ll_animation.setVisibility(View.GONE);
+                Preference.setTouch(true);
+            }
+        });
         iv_vpn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

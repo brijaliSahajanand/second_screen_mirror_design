@@ -11,6 +11,7 @@ import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Build;
 import android.os.PowerManager;
+import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -26,6 +27,7 @@ import java.util.concurrent.TimeUnit;
 import static android.content.Context.AUDIO_SERVICE;
 import static com.google.android.exoplayer2.ui.PlayerNotificationManager.ACTION_PAUSE;
 import static com.google.android.exoplayer2.ui.PlayerNotificationManager.ACTION_PLAY;
+import static com.screenmirror.screentv.tvsharingapp.Activity.Audio.Music.MusicNotificationManager.PLAY_PAUSE_ACTION;
 
 
 public final class MediaPlayerHolder implements PlayerAdapter, MediaPlayer.OnCompletionListener, MediaPlayer.OnPreparedListener {
@@ -109,7 +111,7 @@ public final class MediaPlayerHolder implements PlayerAdapter, MediaPlayer.OnCom
         final IntentFilter intentFilter = new IntentFilter();
 
         intentFilter.addAction(MusicNotificationManager.PREV_ACTION);
-        intentFilter.addAction(MusicNotificationManager.PLAY_PAUSE_ACTION);
+        intentFilter.addAction(PLAY_PAUSE_ACTION);
         intentFilter.addAction(MusicNotificationManager.NEXT_ACTION);
         intentFilter.addAction(BluetoothDevice.ACTION_ACL_CONNECTED);
         intentFilter.addAction(BluetoothDevice.ACTION_ACL_DISCONNECTED);
@@ -284,19 +286,9 @@ public final class MediaPlayerHolder implements PlayerAdapter, MediaPlayer.OnCom
         }
     }
 
-    private void resumemedia() {
-        if (!isPlaying()) {
-            mMediaPlayer.start();
-        }
-    }
-
-    private void pausemedia() {
-        if (!isPlaying()) {
-            mMediaPlayer.pause();
-        }
-    }
 
     private void pauseMediaPlayer() {
+
         setStatus(PlaybackInfoListener.State.PAUSED);
         mMediaPlayer.pause();
         mMusicService.stopForeground(false);
@@ -619,7 +611,7 @@ public final class MediaPlayerHolder implements PlayerAdapter, MediaPlayer.OnCom
                     case MusicNotificationManager.PREV_ACTION:
                         instantReset();
                         break;
-                    case MusicNotificationManager.PLAY_PAUSE_ACTION:
+                    case PLAY_PAUSE_ACTION:
                         resumeOrPause();
                         break;
                     case MusicNotificationManager.NEXT_ACTION:

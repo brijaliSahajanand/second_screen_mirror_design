@@ -17,6 +17,8 @@
     <color name="white">#FFFFFF</color>
     <color name="light_white">#F6F7FB</color>
     <color name="black">#000000</color>
+    <color name="light_black">#80000000</color>
+    <color name="light_black1">#60000000</color>
     <!--    <color name="gold">#BF780A</color>-->
     <color name="blue">#0682EC</color>
     <color name="blue_light">#6A427AAA</color>

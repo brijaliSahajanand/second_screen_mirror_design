@@ -994,7 +994,7 @@ public class Preference {
     private static final String Profile_pic = "Profile_pic";
     private static final String profile_user_name = "profile_user_name";
     private static final String insta_login = "insta_login";
-    private static final String wt_show = "wt_show";
+    private static final String wt_show = "Touch";
     private static final String intro_show = "intro_show";
 
     //new For Share
@@ -1123,11 +1123,14 @@ public class Preference {
 
 
 
-    public static void setwt_show(boolean value) {
+    public static void setTouch(boolean value) {
         get().edit().putBoolean(wt_show, value).apply();
     }
 
-    public static boolean getwt_show() {
-        return get().getBoolean(wt_show, true);
+    public static boolean getTouch() {
+        return get().getBoolean(wt_show, false);
     }
+
+
+
 }

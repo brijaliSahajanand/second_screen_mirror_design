@@ -26,8 +26,8 @@
 
             <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/folderPic"
-                android:layout_width="@dimen/_60sdp"
-                android:layout_height="@dimen/_60sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
                 android:layout_gravity="center"
                 android:scaleType="center"
                 app:riv_corner_radius="15dip"
@@ -54,7 +54,7 @@
                     android:gravity="bottom"
                     android:maxLines="1"
                     android:text="Name"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/black"
                     android:textSize="@dimen/_13ssp" />
 
                 <TextView
@@ -67,7 +67,7 @@
                     android:gravity="center_vertical"
                     android:maxLines="1"
                     android:text="video 0"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/black"
                     android:textSize="@dimen/_10sdp"
                     android:textStyle="normal" />
 

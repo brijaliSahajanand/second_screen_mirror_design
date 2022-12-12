@@ -10,6 +10,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.drawable.VectorDrawable;
+import android.icu.text.CaseMap;
 import android.os.Build;
 import android.text.Spanned;
 import android.util.Log;
@@ -17,7 +18,6 @@ import android.util.Log;
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.core.app.NotificationCompat;
-
 
 import com.screenmirror.screentv.tvsharingapp.Activity.Splash_Activity;
 import com.screenmirror.screentv.tvsharingapp.Model.Song;
@@ -34,20 +34,10 @@ public class MusicNotificationManager {
     static final String PREV_ACTION = "com.musicplayer.mp3apps.PREV";
     private final String CHANNEL_ID = "com.musicplayer.mp3apps.CHANNEL_ID";
 
-
-    public static final String TWO_ACTION_PLAY = "play";
-    public static final String TWO_ACTION_PAUSE = "pause";
-    public static final String TWO_ACTION_SHUFFLE = "shuffle";
-    public static final String TWO_ACTION_NEXT = "Next";
-    public static final String TWO_ACTION_PREVIOUS = "previous";
-    public static final String TWO_ACTION_REPEAT = "repeat";
-    public static final String TWO_ACTION = "action";
-    private static final int DEFAULT_POSITION = 0;
-
-    private final int REQUEST_CODE = 100;
+    public static int REQUEST_CODE = 100;
     public final NotificationManager mNotificationManager;
-    private final MusicService mMusicService;
-    private NotificationCompat.Builder mNotificationBuilder;
+    public static MusicService mMusicService;
+    public static NotificationCompat.Builder mNotificationBuilder;
     private int mAccent;
 
 
@@ -68,7 +58,7 @@ public class MusicNotificationManager {
         return mNotificationBuilder;
     }
 
-    private PendingIntent playerAction(@NonNull final String action) {
+    public static PendingIntent playerAction(@NonNull final String action) {
 
 /*
         final Intent pauseIntent = new Intent();
@@ -88,7 +78,6 @@ public class MusicNotificationManager {
         final Intent pauseIntent = new Intent();
         pauseIntent.setAction(action);
 
-
         PendingIntent clickIntent;
         if (Build.VERSION.SDK_INT >= 31) {
             clickIntent = PendingIntent.getBroadcast(mMusicService,
@@ -107,6 +96,10 @@ public class MusicNotificationManager {
 
 
     public Notification createNotification() {
+        if (mNotificationBuilder != null) {
+            mNotificationBuilder = null;
+        }
+
 
         final Song song = mMusicService.getMediaPlayerHolder().getCurrentSong();
         mNotificationBuilder = new NotificationCompat.Builder(mMusicService, CHANNEL_ID);
@@ -155,6 +148,7 @@ public class MusicNotificationManager {
                 .setVisibility(NotificationCompat.VISIBILITY_PUBLIC);
 
         mNotificationBuilder.setStyle(new androidx.media.app.NotificationCompat.MediaStyle().setShowActionsInCompactView(0, 1, 2));
+
         return mNotificationBuilder.build();
     }
 
@@ -162,15 +156,15 @@ public class MusicNotificationManager {
     @NonNull
     private NotificationCompat.Action notificationAction(@NonNull final String action) {
         int icon;
-        Log.d("18/8 data outer  -- ", "pause calling");
-
         switch (action) {
             default:
             case PREV_ACTION:
                 icon = R.drawable.ic_skip_previous_notification;
                 break;
             case PLAY_PAUSE_ACTION:
-                icon = mMusicService.getMediaPlayerHolder().getState() != PlaybackInfoListener.State.PAUSED ? R.drawable.ic_pause_notification : R.drawable.ic_play_notification;
+
+                icon = mMusicService.getMediaPlayerHolder().getState() != PlaybackInfoListener.State.PAUSED ?
+                        R.drawable.ic_pause_notification : R.drawable.ic_play_notification;
                 break;
             case NEXT_ACTION:
                 icon = R.drawable.ic_skip_next_notification;
@@ -179,65 +173,6 @@ public class MusicNotificationManager {
         return new NotificationCompat.Action.Builder(icon, action, playerAction(action)).build();
     }
 
-
-/*    @NonNull
-    private NotificationCompat.Action notificationAction(Context context, @NonNull final String action) {
-
-        int icon;
-        PendingIntent pIntent = null;
-        Log.d("18/8 data outer  -- ", action);
-
-
-        switch (action) {
-            default:
-            case PREV_ACTION:
-                icon = R.drawable.ic_skip_previous_notification;
-                Intent previousIntent = new Intent(context, MusicService.class);
-                previousIntent.setAction(TWO_ACTION_PREVIOUS);
-                Log.d("18/8 data  -- ", "PREV_ACTION");
-                pIntent = PendingIntent.getService(context, 0, previousIntent, 0);
-
-                break;
-            case PLAY_PAUSE_ACTION:
-                String pausePlan = "";
-                if (mMusicService.getMediaPlayerHolder().getState() == PlaybackInfoListener.State.PAUSED) {
-                    pausePlan = TWO_ACTION_PAUSE;
-                } else if (mMusicService.getMediaPlayerHolder().getState() == PlaybackInfoListener.State.PLAYING) {
-                    pausePlan = TWO_ACTION_PLAY;
-                } else {
-                    pausePlan = TWO_ACTION_PAUSE;
-                }
-
-                icon = mMusicService.getMediaPlayerHolder().getState() != PlaybackInfoListener.State.PAUSED ? R.drawable.ic_pause_notification : R.drawable.ic_play_notification;
-                Intent playIntent = new Intent(context, MusicService.class);
-                playIntent.setAction(pausePlan);
-
-                if (Build.VERSION.SDK_INT >= 31) {
-                    pIntent = PendingIntent.getActivity(context,
-                            0, playIntent, PendingIntent.FLAG_UPDATE_CURRENT | FLAG_IMMUTABLE);
-
-                } else {
-                    pIntent = PendingIntent.getActivity(context,
-                            0, playIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-                }
-
-                Log.d("18/8 data  -- ", "PLAY_PAUSE_ACTION");
-
-
-                break;
-            case NEXT_ACTION:
-                icon = R.drawable.ic_skip_next_notification;
-                Intent nextIntent = new Intent(context, MusicService.class);
-                nextIntent.setAction(TWO_ACTION_NEXT);
-                pIntent = PendingIntent.getService(context, 0, nextIntent, 0);
-                Log.d("18/8 data  -- ", "NEXT_ACTION");
-
-
-                break;
-        }
-        return new NotificationCompat.Action.Builder(icon, action, pIntent).build();
-        // return new NotificationCompat.Action.Builder(icon, action, playerAction(action)).build();
-    }*/
 
 
     @RequiresApi(26)

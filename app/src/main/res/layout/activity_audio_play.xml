@@ -7,34 +7,25 @@
     android:orientation="vertical"
     tools:context=".Activity.Audio.AudioPlayActivity">
 
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight=".8">
-
-        <ImageView
-            android:id="@+id/iv_back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="@dimen/_10sdp"
-            android:src="@drawable/img_back"
-            />
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:padding="@dimen/_10sdp"
+        android:src="@drawable/img_back" />
 
 
-        <ImageView
-            android:id="@+id/iv_audioplay"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@+id/iv_back"
-            android:layout_centerInParent="true"
-            android:src="@drawable/audioplay"
-            android:visibility="visible" />
+    <ImageView
+        android:id="@+id/iv_audioplay"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_below="@+id/iv_back"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:src="@drawable/audioplay"
+        android:visibility="visible" />
 
-
-
-
-    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -53,11 +44,13 @@
             android:fontFamily="@font/text_medium"
             android:gravity="center"
             android:singleLine="true"
+            android:includeFontPadding="false"
             android:text="My Delorem"
             android:textColor="@color/black"
             android:textSize="@dimen/_18sdp" />
 
         <TextView
+            android:includeFontPadding="false"
             android:id="@+id/tv_full_artistname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -111,6 +104,8 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        android:includeFontPadding="false"
+
                         android:id="@+id/time_left"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -122,6 +117,7 @@
                         android:textStyle="bold" />
 
                     <TextView
+                        android:includeFontPadding="false"
                         android:id="@+id/time_duration"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

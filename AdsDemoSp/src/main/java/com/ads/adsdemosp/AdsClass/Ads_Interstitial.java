@@ -36,7 +36,7 @@ public class Ads_Interstitial {
     public static long mLastClickTime;
 
     public static void showAds_full(Activity context, OnFinishAds onFinishAd, boolean... doShowAds) {
-        if (SystemClock.elapsedRealtime() - mLastClickTime < 500) {
+        if (SystemClock.elapsedRealtime() - mLastClickTime < 100) {
             return;
         }
         mLastClickTime = SystemClock.elapsedRealtime();
@@ -89,8 +89,7 @@ public class Ads_Interstitial {
     }
 
     public static void BackshowAds_full(Activity context, OnFinishAds onFinishAd, boolean... doShowAds) {
-
-        if (SystemClock.elapsedRealtime() - mLastClickTime < 500) {
+        if (SystemClock.elapsedRealtime() - mLastClickTime < 100) {
             return;
         }
         mLastClickTime = SystemClock.elapsedRealtime();
